@@ -1,0 +1,101 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景グラデーション定義 -->
+  <defs>
+    <linearGradient id="backgroundGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3c72;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2a5298;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- シャドウフィルター -->
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4"/>
+      <feOffset dx="0" dy="4" result="offsetblur"/>
+      <feFlood flood-color="#000000" flood-opacity="0.3"/>
+      <feComposite in2="offsetblur" operator="in"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- 内側のシャドウ -->
+    <filter id="innerShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2"/>
+      <feOffset dx="0" dy="2" result="offsetblur"/>
+      <feFlood flood-color="#ffffff" flood-opacity="0.3"/>
+      <feComposite in2="offsetblur" operator="in"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- 背景の角丸四角形 -->
+  <rect width="512" height="512" fill="url(#backgroundGradient)" rx="80" ry="80"/>
+  
+  <!-- メインアイコン部分 -->
+  <g transform="translate(256, 256)">
+    <!-- カメラアイコン -->
+    <g transform="translate(-140, -60)">
+      <!-- カメラ本体 -->
+      <rect x="-60" y="-40" width="120" height="80" rx="15" ry="15" 
+            fill="#ffffff" opacity="0.9" filter="url(#shadow)"/>
+      
+      <!-- レンズ外枠 -->
+      <circle cx="0" cy="0" r="35" fill="#1e3c72" opacity="0.8"/>
+      <circle cx="0" cy="0" r="30" fill="#ffffff" opacity="0.9"/>
+      
+      <!-- レンズ内部 -->
+      <circle cx="0" cy="0" r="25" fill="#2a5298" opacity="0.8"/>
+      <circle cx="0" cy="0" r="20" fill="#1e3c72" opacity="0.6"/>
+      <circle cx="0" cy="0" r="15" fill="#000000" opacity="0.4"/>
+      
+      <!-- レンズ反射 -->
+      <ellipse cx="-8" cy="-8" rx="8" ry="6" fill="#ffffff" opacity="0.6" 
+               transform="rotate(-45 -8 -8)"/>
+      
+      <!-- 録画インジケーター -->
+      <circle cx="40" cy="-25" r="8" fill="#ff4757" opacity="0.9">
+        <animate attributeName="opacity" values="0.9;0.3;0.9" dur="2s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+    
+    <!-- 遅延時間表示 -->
+    <g transform="translate(80, -20)">
+      <!-- 背景パネル -->
+      <rect x="-50" y="-30" width="100" height="60" rx="30" ry="30" 
+            fill="#ffffff" opacity="0.3" filter="url(#innerShadow)"/>
+      
+      <!-- テキスト -->
+      <text x="0" y="8" text-anchor="middle" 
+            font-family="Arial, sans-serif" font-size="36" font-weight="bold" 
+            fill="#ffffff" filter="url(#shadow)">5s</text>
+    </g>
+    
+    <!-- 再生矢印アイコン -->
+    <g transform="translate(0, 80)">
+      <!-- 円形背景 -->
+      <circle cx="0" cy="0" r="45" fill="#ffffff" opacity="0.3" filter="url(#innerShadow)"/>
+      
+      <!-- 再生矢印 -->
+      <path d="M -20,-25 L -20,25 L 25,0 Z" 
+            fill="#ffffff" opacity="0.9" filter="url(#shadow)"/>
+      
+      <!-- 巻き戻し線 -->
+      <path d="M -35,-30 Q -50,-30 -50,-15 L -50,15 Q -50,30 -35,30" 
+            stroke="#ffffff" stroke-width="4" fill="none" opacity="0.7"
+            stroke-linecap="round"/>
+      <path d="M -45,25 L -35,30 L -40,20" 
+            fill="#ffffff" opacity="0.7"/>
+    </g>
+    
+    <!-- 装飾的な波形 -->
+    <g transform="translate(0, -140)" opacity="0.3">
+      <path d="M -100,0 Q -50,-10 0,0 T 100,0" 
+            stroke="#ffffff" stroke-width="3" fill="none" opacity="0.5"/>
+      <path d="M -100,10 Q -50,0 0,10 T 100,10" 
+            stroke="#ffffff" stroke-width="2" fill="none" opacity="0.4"/>
+    </g>
+  </g>
+</svg>

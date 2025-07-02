@@ -1,0 +1,66 @@
+{
+  "name": "体育授業用 遅延再生アプリ",
+  "short_name": "遅延再生",
+  "description": "体育の授業で使える遅延再生アプリ。最大90秒の遅延再生が可能です。",
+  "lang": "ja",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "theme_color": "#1e3c72",
+  "background_color": "#1e3c72",
+  "categories": ["education", "sports", "utilities"],
+  "dir": "ltr",
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "録画開始",
+      "short_name": "録画",
+      "description": "録画を即座に開始します",
+      "url": "./index.html?action=start",
+      "icons": [
+        {
+          "src": "icons/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "screenshots/app-main.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "label": "メイン画面"
+    },
+    {
+      "src": "screenshots/app-recording.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "label": "録画中の画面"
+    }
+  ],
+  "related_applications": [],
+  "iarc_rating_id": ""
+}
