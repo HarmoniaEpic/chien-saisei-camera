@@ -67,3 +67,7 @@ MIT License - 詳細は [LICENSE](LICENSE) ファイルを参照
 ## 🤝 貢献
 
 Issue報告やPull Requestを歓迎します。
+
+## 👤 作者
+
+HarmoniaEpic
