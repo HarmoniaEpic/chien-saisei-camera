@@ -26,11 +26,9 @@ https://harmoniaepic.github.io/chien-saisei-camera-pwa/
 2. ブラウザのメニューから「ホーム画面に追加」を選択
 3. アプリアイコンから起動可能に
 
-https://learn.microsoft.com/ja-jp/microsoft-edge/progressive-web-apps/ux
-
-https://support.google.com/chrome/answer/9658361?hl=ja&co=GENIE.Platform%3DDesktop
-
-https://developer.mozilla.org/ja/docs/Web/Progressive_web_apps/Guides/Installing
+- [Chrome でのインストール](https://support.google.com/chrome/answer/9658361?hl=ja)
+- [Edge でのインストール](https://learn.microsoft.com/ja-jp/microsoft-edge/progressive-web-apps/ux)
+- [Firefox でのインストール](https://developer.mozilla.org/ja/docs/Web/Progressive_web_apps/Guides/Installing)
 
 ## 🏫 授業での活用例
 
