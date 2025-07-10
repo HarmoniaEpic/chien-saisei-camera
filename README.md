@@ -21,14 +21,13 @@ https://harmoniaepic.github.io/chien-saisei-camera-pwa/
 2. カメラへのアクセスを許可
 3. 遅延時間を設定して「録画開始」をタップ
 
-### アプリとしてインストール
-1. 上記URLにアクセス
-2. ブラウザのメニューから「ホーム画面に追加」を選択
-3. アプリアイコンから起動可能に
+## 📱 アプリとしてインストール
 
-- [Chrome でのインストール](https://support.google.com/chrome/answer/9658361?hl=ja)
-- [Edge でのインストール](https://learn.microsoft.com/ja-jp/microsoft-edge/progressive-web-apps/ux)
-- [Firefox でのインストール](https://developer.mozilla.org/ja/docs/Web/Progressive_web_apps/Guides/Installing)
+インストールしてオフラインで使えます。ブラウザでアクセス後、「アプリをインストール」ボタンをクリックするか、ブラウザのメニューから「アプリをインストール」を選択してください。
+
+- [Chrome でのインストール方法詳細](https://support.google.com/chrome/answer/9658361?hl=ja)
+- [Edge でのインストール方法詳細](https://learn.microsoft.com/ja-jp/microsoft-edge/progressive-web-apps/ux)
+- [MDN での PWA 解説](https://developer.mozilla.org/ja/docs/Web/Progressive_web_apps/Guides/Installing)
 
 ## 🏫 授業での活用例
 
